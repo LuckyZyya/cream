@@ -98,10 +98,11 @@ h1{
 
 .userCard {
 	/* 超出部分可以自适应 */
+	border: 1px solid yellow;
 	max-width: 940px;
 	margin-left: auto;
 	margin-right: auto;
-	background: #efefef;
+	background: #ffffff;
 }
 
 .userCard .welcome {
@@ -126,6 +127,10 @@ h1{
 }
 .userCard .picture{
 	float: left;
+}
+.userCard .picture .img{
+	width:299px;
+	height:377px;
 }
 .userCard .text{
 	float: left;
@@ -159,9 +164,10 @@ h1{
 }
 .userCard >footer.media>a{
 	display: inline-block;
+	
 	width: 40px;
 	line-height: 30px;
-	padding: 5px 0;
+	padding: 5px 0px;
 	border-radius: 50%;
 	margin: 16px;
 }
@@ -172,6 +178,6 @@ h1{
 	width: 30px;
 	height: 30px;
 	fill: white;
-	margin: 0 16px;
+	
 	vertical-align: top;
 }
