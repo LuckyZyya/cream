@@ -98,11 +98,11 @@ h1{
 
 .userCard {
 	/* 超出部分可以自适应 */
-	border: 1px solid yellow;
 	max-width: 940px;
 	margin-left: auto;
 	margin-right: auto;
 	background: #ffffff;
+	box-shadow: 0px 1px 5px 0px rgba(48,46,48,0.5);
 }
 
 .userCard .welcome {
@@ -177,7 +177,38 @@ h1{
 .userCard svg{
 	width: 30px;
 	height: 30px;
-	fill: white;
-	
+	fill: white;	
 	vertical-align: top;
+}
+body>main{
+	margin-top: -330px;
+}
+body>main .downloadResume-wrapper{
+	text-align: center;
+}
+body>main .downloadResume{
+	font-size: 14px;
+	line-height: 16px;
+	padding:21px 55px;
+	display: inline-block;
+	border: 1px solid #cdcfd1;
+	background: #efefef;
+	border-radius: 2px;
+	color: #3d4451;
+	font-weight: bold;
+	margin: 32px 0;
+	/* 添加过渡效果 */
+	transition: box-shadow 0.2s;
+}
+body>main .downloadResume:hover{
+	box-shadow: 4px 7px 11px 1px rgba(48,46,48,0.2);
+}
+.selfIntroduction{
+	max-width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 18px;
+	font-family: "NSimSun";
+	line-height: 1.8em;
+	text-align: center;
 }
