@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>vue入门</title>
+    <script src="vue.js"></script>
+</head>
+
+<body>
+    <!-- 挂载点 模板 实例之间的关系 -->
+    <div id="test">
+        <div>
+            <input v-model="inputvalue" />
+            <button @click="handleSubmit">提交</button>
+        </div>
+        <ul>
+            <todo-item v-for="(item,index) of list" :key="index" :content="item" :index="index" @delete="handleDelete">
+            </todo-item>
+        </ul>
+    </div>
+
+    <script>
+        // 注册一个全局组件
+        Vue.component('todo-item', {
+            //接收外面组件传过来的内容
+            props: ['content', 'index'],
+            template: '<li @click="handleClick">{{content}}</li>',
+            methods: {
+                handleClick: function () {
+                    this.$emit('delete', this.index)
+                }
+            }
+        })
+        new Vue({
+            el: "#test",
+            data: {
+                inputvalue: '',
+                list: []
+            },
+            methods: {
+                handleSubmit: function () {
+                    // 添加
+                    this.list.push(this.inputvalue)
+                    this.inputvalue = ''
+                },
+                handleDelete: function () {
+                    this.list.splice(index, 1)
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
