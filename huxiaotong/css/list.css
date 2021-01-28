@@ -1,0 +1,159 @@
+/* 广告 */
+.banner {
+    width: 100%;
+    height: 360px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content {
+    width: 1200px;
+    margin: 0 auto;
+    /* margin-left: 400px;
+    margin-top: 20px; */
+    /* border: 1px solid yellow; */
+
+}
+
+.newsTitle p:first-child {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1e93fa;
+}
+
+.newsTitle p:nth-child(2) {
+    font-size: 24px;
+    color: #999999;
+}
+
+.newsIntroduce {
+    /* width: 48%; */
+    /* height: 220px; */
+    margin-bottom: 30px;
+    margin-left: 200px;
+
+}
+
+.newsFirst {
+    margin-top: -70px;
+
+}
+
+.newsItem {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    /* border: 1px solid red; */
+}
+
+.newsItem>img {
+    width: 220px;
+    height: 160px;
+
+}
+
+.newsIntroduceInner {
+    width: 360px;
+    margin-left: 10px;
+    flex: 1;
+
+}
+
+.newsIntroduceInner p {
+    font-size: 14px;
+    color: #808080;
+    line-height: 30px;
+
+}
+
+.newsIntroduceInner p:first-child {
+    font-size: 20px;
+    padding-bottom: 25px;
+
+}
+
+.time {
+    padding-top: 12px;
+}
+
+.time>img {
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+
+.time>p {
+    margin-left: 40px;
+    color: #8a8a8a;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+/* 底部 */
+.footContent {
+    margin-top: 100px;
+    width: 100%;
+    background: #373737;
+}
+
+.footAllContent {
+    width: 1200px;
+    margin: 0 auto;
+    height: 230px;
+    display: flex;
+
+}
+
+.footContentInner {
+    width: 510px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.footContentInner>img {
+    width: 230px;
+    height: 109px;
+}
+
+.footContentInner p {
+    font-size: 16px;
+    color: #848484;
+    line-height: 30px;
+}
+
+.footAbout {
+    width: 300px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 50px;
+    color: #848484;
+    line-height: 38px;
+
+}
+
+
+
+.footAbout>ul>li:first-child,
+.footConnect>ul>li:first-child {
+    color: #ffffff;
+}
+
+.footConnect {
+    width: 300px;
+    font-size: 18px;
+    margin-top: 50px;
+    color: #848484;
+    line-height: 38px;
+    margin-left: 155px;
+}
+
+.connect>img {
+    width: 35px;
+    height: 35px;
+    float: left;
+
+}
+
+.connect p {
+    margin-left: 50px;
+}
