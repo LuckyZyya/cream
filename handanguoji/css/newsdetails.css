@@ -60,7 +60,7 @@
 
 .s-m-newsLeft>p>span {
     display: block;
-    width: 110px;
+    width: 100px;
     height: 40px;
     font-size: 14px;
     line-height: 40px;
@@ -70,7 +70,7 @@
 
 .s-m-newsLeft>p>span:nth-child(2) {
     color: #ffffff;
-    margin-left: 15px;
+    margin-left: -15px;
     background-color: #ffc600;
 }
 
@@ -104,10 +104,16 @@
     color: #666;
 }
 
-.s-m-newsRight>div>img {
+.n-m-icon {
     width: 17px;
     height: 14px;
-    margin-top: -3px;
+    float: left;
+    margin-top: 2px;
+}
+
+.n-m-icon>img {
+    width: 17px;
+    height: 14px;
 }
 
 .n-m-detail {
