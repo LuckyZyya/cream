@@ -122,3 +122,13 @@
     margin: 0 auto;
     height: 150px;
 }
+
+.n-m-backLeft {
+    float: left;
+    margin: 20px;
+}
+
+.n-m-backRight {
+    float: right;
+    margin: 20px 0px;
+}
