@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.clearFix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.topNav {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+.topNavLogo {
+    float: left;
+}
+
+.topNavLogo>img {
+    height: 50px;
+    width: 320px;
+}
+
+.topNavContent {
+    float: right;
+}
+
+.topNavContent>ul>li {
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    margin: 15px 10px;
+}
+
+.topNavContent>ul>li a {
+    color: #fff;
+}
+
+.topNavContent>ul>li a:hover {
+    color: #f8bb26;
+}
+
+/* 底部 */
+footer {
+    height: 455px;
+    background-image: url(../img/index2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.i-f-content {
+    padding-top: 165px;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.i-f-scan {
+    /* margin: 0px 100px 0px 85px; */
+    width: 100px;
+    height: 135px;
+    float: left;
+}
+
+.i-f-scan>img {
+    width: 100px;
+    height: 105px;
+}
+
+.i-f-scan>p {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 3px;
+}
+
+.i-f-link {
+    width: 650px;
+    height: 135px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 25px 0px 90px;
+    float: left;
+}
+
+.i-f-linkContent {
+    padding-right: 15px;
+    flex: 1;
+}
+
+.i-f-linkContent>ul>li>a {
+    font-size: 12px;
+    color: #b0b0b0;
+    line-height: 27px;
+}
+
+.i-f-linkContent>ul>li:first-child>a {
+    font-size: 14px;
+    color: #d2d2d2;
+}
+
+.i-f-right {
+    height: 135px;
+    float: left;
+}
+
+.i-f-right>div {
+    width: 225px;
+    height: 50px;
+    border-radius: 50px;
+    background: #ffc600;
+    text-align: center;
+    margin: 0px 15px 24px 15px;
+}
+
+.i-f-right>div a {
+    font-size: 16px;
+    color: #fff;
+    line-height: 50px;
+}
+
+.i-f-bottom {
+    background: #000000;
+    opacity: 0.23;
+    height: 40px;
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 12px;
+    line-height: 40px;
+    color: #6e6e6e;
+    margin-top: 105px;
+}
