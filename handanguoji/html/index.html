@@ -10,31 +10,87 @@
     <meta name="description" content="" />
     <link rel="stylesheet" href="../css/public.css">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../Swiper-3.4.2/dist/css/swiper.css">
+    <script src="../Swiper-3.4.2/dist/js/swiper.js"></script>
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 820px;
+        }
 
+        .swiper-slide {
+            text-align: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .swiper-pagination-bullet {
+            width: 15px;
+            height: 15px;
+            border: 2px solid #fff;
+        }
+
+
+        .swiper-pagination-bullet-active {
+            background: #fff;
+        }
+
+        main>div:nth-child(3)>.swiper-pagination>.swiper-pagination-bullet {
+            width: 100px;
+            height: 5px;
+            border-radius: 0%;
+            border: 2px solid transparent;
+            background-color: #fed538;
+        }
+
+        main>div:nth-child(3)>.swiper-pagination>.swiper-pagination-bullet .swiper-pagination-bullet-active {
+            opacity: 0.6;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- 头部 -->
-    <div class="top" style="background-image:url(../img/index3.jpg);">
-        <div class="topNav">
-            <div class="clearFix topNavLogo">
-                <a><img src="../img/logo.png"></a>
-            </div>
-            <div class="clearFix topNavContent">
-                <ul>
-                    <li><a href="../html/index.html">首页</a></li>
-                    <li><a href="">党群工作</a></li>
-                    <li><a href="">关于陆港</a></li>
-                    <li><a href="">新闻中心</a></li>
-                    <li><a href="">供应链</a></li>
-                    <li><a href="">园区招商</a></li>
-                    <li><a href="">物流服务</a></li>
-                    <li><a href="">钢材市场</a></li>
-                    <li><a href="">人力资源</a></li>
-                </ul>
+    <div style="width: 100%; margin: 0 auto;">
+        <div class="top">
+            <div class="topNav">
+                <div class="clearFix topNavLogo">
+                    <a><img src="../img/logo.png"></a>
+                </div>
+                <div class="clearFix topNavContent">
+                    <ul>
+                        <li><a href="../html/index.html">首页</a></li>
+                        <li><a href="">党群工作</a></li>
+                        <li><a href="">关于陆港</a></li>
+                        <li><a href="">新闻中心</a></li>
+                        <li><a href="">供应链</a></li>
+                        <li><a href="">园区招商</a></li>
+                        <li><a href="">物流服务</a></li>
+                        <li><a href="">钢材市场</a></li>
+                        <li><a href="">人力资源</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
+    <!-- 头部 -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(../img/index3.jpg);"></div>
+            <div class="swiper-slide" style="background-image:url(../img/index1.jpg);"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
     <!-- 主要内容 -->
     <main>
         <div class="aboutLand">
@@ -53,7 +109,8 @@
             </div>
         </div>
 
-        <div class="centerContent" style="background-image: url(../img/index1.jpg);">
+
+        <div class="centerContent">
             <div class="i-m-cardBg">
                 <div class="centerCard">
                     <img src="../img/index5.jpg" alt="办公楼招商">
@@ -61,7 +118,7 @@
                         <p style=" color: #333;font-size: 20px;font-weight: bold;">办公楼招商</p>
                         <p
                             style="  color: #666666;font-size: 12px;margin-top: 15px;line-height: 25px; display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 5;overflow: hidden;">
-                            <a>为国有独资企业，前身为义乌市交通发展有限责任公司第一分公司、义乌市运输场站建设经营有限责任公司、义乌市联托运开发总公司等，现主要负责国内货运场站经营、管理。分公司下设综合科、财务科、安保科、江东货运市场、江北下朱货运场共5个部门，有员工70余人下朱货运场共5个部门，下朱货运场共5个部门。</a>
+                            <a>为国有独资企业，前身为义乌市交通发展有限责任公司第一分公司、义乌市运输场站建设经营有限责任公司、义乌市联托运开发总公司等，现主要负责国内货运场站经营、管理。分公司下设综合科、财务科、安保科、江东货运市场、江北下朱货运场共5个部门，有员工70余人下朱货运场共5个部门，下朱货运场共5个部门。下朱货运场共5个部门</a>
                         </p>
                         <div class="knowDetails"><a>了解详情</a></div>
                     </div>
@@ -91,6 +148,17 @@
             </div>
         </div>
 
+        <div class="swiper-container" style="margin-top: 100px;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(../img/index3.jpg);"></div>
+                <div class="swiper-slide" style="background-image:url(../img/index1.jpg);"></div>
+            </div>
+            <div class="swiper-pagination" style=""></div>
+        </div>
+
+
+
+
         <div class="newsCard">
             <div class="newsDetails">
                 <img src="../img/indexLeft.png" alt="左">
@@ -103,7 +171,8 @@
                         <p
                             style="margin: 0px 15px; color: #333333;font-size: 26px;height: 60px;width: 95px;text-align: center;line-height: 60px; border-bottom: 1px solid #fed538;">
                             22</p>
-                        <p style="margin: 15px 15px;font-size: 16px;color: #999999;text-align: center;">2019/04</p>
+                        <p style="margin: 15px 15px;font-size: 16px;color: #999999;text-align: center;">2019/04
+                        </p>
                     </div>
                     <div class="clearFix cardContent">
                         <p><a href="" style="color: #333;font-size: 16px;">航空托运行李的旅行过程</a></p>
@@ -118,7 +187,8 @@
                         <p
                             style="margin: 0px 15px; color: #333333;font-size: 26px;height: 60px;width: 95px;text-align: center;line-height: 60px; border-bottom: 1px solid #fed538;">
                             22</p>
-                        <p style="margin: 15px 15px;font-size: 16px;color: #999999;text-align: center;">2019/04</p>
+                        <p style="margin: 15px 15px;font-size: 16px;color: #999999;text-align: center;">2019/04
+                        </p>
                     </div>
                     <div class="clearFix cardContent">
                         <p><a href="" style="color: #333;font-size: 16px;">航空托运行李的旅行过程</a></p>
@@ -133,7 +203,8 @@
                         <p
                             style="margin: 0px 15px; color: #333333;font-size: 26px;height: 60px;width: 95px;text-align: center;line-height: 60px; border-bottom: 1px solid #fed538;">
                             22</p>
-                        <p style="margin: 15px 15px;font-size: 16px;color: #999999;text-align: center;">2019/04</p>
+                        <p style="margin: 15px 15px;font-size: 16px;color: #999999;text-align: center;">2019/04
+                        </p>
                     </div>
                     <div class="clearFix cardContent">
                         <p><a href="" style="color: #333;font-size: 16px;">航空托运行李的旅行过程</a></p>
@@ -148,7 +219,8 @@
                         <p
                             style="margin: 0px 15px; color: #333333;font-size: 26px;height: 60px;width: 95px;text-align: center;line-height: 60px; border-bottom: 1px solid #fed538;">
                             22</p>
-                        <p style="margin: 15px 15px;font-size: 16px;color: #999999;text-align: center;">2019/04</p>
+                        <p style="margin: 15px 15px;font-size: 16px;color: #999999;text-align: center;">2019/04
+                        </p>
                     </div>
                     <div class="clearFix cardContent">
                         <p><a href="" style="color: #333;font-size: 16px;">航空托运行李的旅行过程</a></p>
@@ -230,6 +302,17 @@
         </div>
         <div class="clearFix i-f-bottom">Copyright&nbsp;&copy;&nbsp;2014-2019邯郸国际陆港有限公司&nbsp;版权所有</div>
     </footer>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            autoplay: 3000, //--每秒中轮播一次
+            loop: true, //--可以让图片循环轮播
+            autoplayDisableOnInteraction: false, //--在点击之后可以继续实现轮播
+
+        });
+    </script>
 </body>
 
 </html>

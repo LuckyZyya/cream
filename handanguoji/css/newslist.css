@@ -23,6 +23,10 @@
     color: #333333;
 }
 
+.s-m-newsLeft>p>a:hover {
+    color: #333333;
+}
+
 .s-m-newsRight {
     width: 140px;
     float: right;
