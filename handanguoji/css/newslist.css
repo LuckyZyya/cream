@@ -71,10 +71,14 @@
 }
 
 .s-n-listCard {
-    margin: 20px 15px 20px 0px;
+    margin: 20px 20px 20px 0px;
     width: 285px;
     height: 435px;
     background-color: #f1f1f1;
+}
+
+.s-n-listCard:nth-of-type(4n) {
+    margin: 20px 0px;
 }
 
 .s-n-number {
