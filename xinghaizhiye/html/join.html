@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="edge" />
+    <meta charset="utf-8" />
+    <title>星海置业</title>
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/join.css">
+    <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function () {
+            $('.unfold').append('<p>展开</p>');
+            var slideHeight = 135; // px
+            var defHeight = $('.unfold>p').parent().prev().prev().height();
+            if (defHeight >= slideHeight) {
+                $('.unfold>p').parent().prev().prev().css('height', slideHeight + 'px');
+                $('.unfold>p').click(function () {
+                    var curHeight = $(this).parent().prev().prev().height();
+                    if (curHeight == slideHeight) {
+                        $(this).parent().prev().prev().animate({
+                            height: defHeight
+                        }, "normal");
+                        $(this).text('收起');
+                    } else {
+                        $(this).parent().prev().prev().animate({
+                            height: slideHeight
+                        }, "normal");
+                        $(this).text('展开');
+                    }
+                    return false;
+                });
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="topNav">
+        <div class="topContainer">
+            <div class="clearFix topLogo">
+                <a><img src="../img/headlogo.png" alt="logo"></a>
+            </div>
+            <div class="clearFix topNavContent">
+                <ul>
+                    <li class="firNav"><a href="../html/index.html">首页</a></li>
+                    <li class="firNav"><a>有关星海<span></span></a>
+                        <ul class="secNav">
+                            <li><a href="#">有关子项1</a></li>
+                            <li><a href="#">有关子项2</a></li>
+                            <li><a href="#">有关子项2</a></li>
+                        </ul>
+                    </li>
+                    <li class="firNav"><a>星海项目<span></span></a>
+                        <ul class="secNav">
+                            <li><a href="#">有关子项</a></li>
+                            <li><a href="#">有关子项2</a></li>
+                        </ul>
+                    </li>
+                    <li class="firNav"><a>星海新闻<span></span></a>
+                        <ul class="secNav">
+                            <li><a href="#">有关子项1</a></li>
+                            <li><a href="#">有关子项2</a></li>
+                            <li><a href="#">有关子项2</a></li>
+                        </ul>
+                    </li>
+                    <li class="firNav"><a href="../html/contact.html " target="_blank">联络星海</a></li>
+                    <li class="firNav"><a>入住星海<span></span></a>
+                        <ul class="secNav">
+                            <li><a href="../html/flowchart.html">入住流程图</a></li>
+                            <li><a href="#">服务问答</a></li>
+                        </ul>
+                    </li>
+                    <li class="firNav"><a href="../html/join.html " target="_blank">加入星海</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="banner" style="background-image: url(../img/joinBanner.jpg);"></div>
+    <main>
+
+        <div class="backIndex">
+            <a><img class="triangle" src="../img/icon1.png" alt="首页">&nbsp;&nbsp;首页</a>
+            <a><img class="triangle" src="../img/icon2.png" alt="右三角">&nbsp;&nbsp;加入星海</a>
+        </div>
+        <div class="contactText">
+            <p>在招职位</p>
+        </div>
+        <div class="contactInclude">
+            <div class="contactBar">
+                <div class="contactBarInner"></div>
+            </div>
+        </div>
+        <div class="joinContent">
+            <div class="joinCard">
+                <div class="lookJob">
+                    <div class="cardTitle">
+                        <div class="workTitle">
+                            <p style="font-size: 18px;color: #333;">储备酒店工程经理/主管</p>
+                            <p style="font-size: 18px;color: #db214c;line-height: 45px;float: left;">
+                                薪资面议&nbsp;<span
+                                    style="font-size: 14px; color: #666;">招1~2人&nbsp;&nbsp;3~5年工作经验&nbsp;&nbsp;新乡&nbsp;&nbsp;2019-05-24&nbsp;&nbsp;发布</span>
+                            </p>
+                        </div>
+                        <div
+                            style="float: right;font-size: 14px;color: #fff; width: 120px;height: 35px;background-color: #db214c;text-align: center;line-height: 35px; margin-right: 25px;">
+                            查看职位
+                        </div>
+                    </div>
+                    <div class="workContent">
+                        <p style="font-size: 16px;color: #333;margin-top: 10px;">工作内容</p>
+                        <ul style="font-size: 14px;color: #666;line-height: 25px;">
+                            <li>1、负责酒店设施设备的日常维护和周期性保养和事故预防；</li>
+                            <li>2、直接参与重要、紧要的设备、设施的抢修、维护保养；</li>
+                            <li>3、参与改造工程的实施，协助；</li>
+                            <li>4、做好管理酒店的能源消耗、工程维护物料成本的管理和控制；</li>
+                            <li>5、建立与酒店各部门的沟通与合作，引导班组员工熟悉、熟知酒店设施、设备维修和保养的技能方法。</li>
+                        </ul>
+
+                        <p style=" color: #333;font-size: 16px;margin-top: 15px">职位要求
+                        </p>
+                        <ul style="font-size: 14px;color: #666;line-height: 25px;">
+                            <li>1、负责酒店设施设备的日常维护和周期性保养和事故预防；</li>
+                            <li>2、直接参与重要、紧要的设备、设施的抢修、维护保养；</li>
+                            <li>3、参与改造工程的实施，协助；</li>
+                            <li>4、做好管理酒店的能源消耗、工程维护物料成本的管理和控制；</li>
+                            <li>5、建立与酒店各部门的沟通与合作，引导班组员工熟悉、熟知酒店设施、设备维修和保养的技能方法。</li>
+                        </ul>
+                        <P style="margin-top: 20px;font-size: 14px;color: #333;">地址：新乡市平原路599号中原银行北段10楼</P>
+                        <p style="margin-top: 15px;font-size: 14px;color: #333;">电话：0373-5026060</p>
+
+                    </div>
+                </div>
+                <div style="margin-top: 10px;border: 1px dashed #ededed;margin-right: 25px;"></div>
+
+                <div class="unfold">
+                </div>
+            </div>
+            <div class="joinCard">
+                <div class="lookJob">
+                    <div class="cardTitle">
+                        <div class="workTitle">
+                            <p style="font-size: 18px;color: #333;">储备酒店工程经理/主管</p>
+                            <p style="font-size: 18px;color: #db214c;line-height: 45px;float: left;">
+                                薪资面议&nbsp;<span
+                                    style="font-size: 14px; color: #666;">招1~2人&nbsp;&nbsp;3~5年工作经验&nbsp;&nbsp;新乡&nbsp;&nbsp;2019-05-24&nbsp;&nbsp;发布</span>
+                            </p>
+                        </div>
+                        <div
+                            style="float: right;font-size: 14px;color: #fff; width: 120px;height: 35px;background-color: #db214c;text-align: center;line-height: 35px; margin-right: 25px;">
+                            查看职位
+                        </div>
+                    </div>
+                    <div class="workContent">
+                        <p style="font-size: 16px;color: #333;margin-top: 10px;">工作内容</p>
+                        <ul style="font-size: 14px;color: #666;line-height: 25px;">
+                            <li>1、负责酒店设施设备的日常维护和周期性保养和事故预防；</li>
+                            <li>2、直接参与重要、紧要的设备、设施的抢修、维护保养；</li>
+                            <li>3、参与改造工程的实施，协助；</li>
+                            <li>4、做好管理酒店的能源消耗、工程维护物料成本的管理和控制；</li>
+                            <li>5、建立与酒店各部门的沟通与合作，引导班组员工熟悉、熟知酒店设施、设备维修和保养的技能方法。</li>
+                        </ul>
+
+                        <p style=" color: #333;font-size: 16px;margin-top: 15px">职位要求
+                        </p>
+                        <ul style="font-size: 14px;color: #666;line-height: 25px;">
+                            <li>1、负责酒店设施设备的日常维护和周期性保养和事故预防；</li>
+                            <li>2、直接参与重要、紧要的设备、设施的抢修、维护保养；</li>
+                            <li>3、参与改造工程的实施，协助；</li>
+                            <li>4、做好管理酒店的能源消耗、工程维护物料成本的管理和控制；</li>
+                            <li>5、建立与酒店各部门的沟通与合作，引导班组员工熟悉、熟知酒店设施、设备维修和保养的技能方法。</li>
+                        </ul>
+                        <P style="margin-top: 20px;font-size: 14px;color: #333;">地址：新乡市平原路599号中原银行北段10楼</P>
+                        <p style="margin-top: 15px;font-size: 14px;color: #333;">电话：0373-5026060</p>
+
+                    </div>
+                </div>
+                <div style="margin-top: 10px;border: 1px dashed #ededed;margin-right: 25px;"></div>
+
+                <div class="unfold">
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!-- 底部 -->
+    <footer>
+        <div class="footContent">
+            <a><img src="../img/footlogo.png" alt="底部logo"></a>
+            <div class="footRight">
+                <div class="footLink">
+                    <ul>
+                        <li><a>首页</a></li>
+                        <li><a>企业邮箱</a></li>
+                        <li><a>联系我们</a></li>
+                        <li><a>免责声明</a></li>
+                    </ul>
+                </div>
+                <div class="footContact">
+                    <p>联系电话：0373-5026060<span> 地址：新乡市平原路599号中原银行北段10楼</span><span>邮箱：xinghaizhiye@126.com</span></p>
+                    <img src="../img/wxchat.png" alt="微信图标">
+                    <p>&nbsp;微信公众号</p>
+                </div>
+
+                <p>Copyright&nbsp;&nbsp;2018-2019&nbsp;xinxiangxinghai.com.&nbsp;All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.topNav {
+    height: 105px;
+    width: 1200px;
+    color: #747d87;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.topContainer {
+    height: 105px;
+    margin: auto;
+}
+
+.topNavContent {
+    float: right;
+    height: 105px;
+}
+
+.topLogo {
+    display: inline-block;
+    height: 105px;
+}
+
+.topLogo a img {
+    width: 185px;
+    height: 105px;
+}
+
+.clearFix {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+.clearFix:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+
+.clearFix ul,
+.clearFix li {
+    display: block;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearFix a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.clearFix a span {
+    width: 10px;
+    height: 5px;
+    background-image: url(../img/icon.png);
+    background-size: cover;
+    display: inline-block;
+    margin-left: 2px;
+}
+
+.firNav {
+    float: left;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    color: #333333;
+    margin: 0 auto;
+}
+
+.firNav a {
+    color: #333333;
+}
+
+.firNav:hover a span {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+.secNav {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.secNav li a {
+    color: #747d87;
+}
+
+.topNavContent .firNav {
+    width: 135px;
+    line-height: 105px;
+
+}
+
+.topNavContent .secNav {
+    margin: 0px;
+    display: none;
+    line-height: 30px;
+    padding: 5px 3px;
+    width: 130px;
+}
+
+.topNavContent .firNav:hover .secNav {
+    display: block;
+    background-color: #fff;
+
+}
+
+.topNavContent .firNav>a:hover {
+    border-bottom: 3px solid #2d77d0;
+}
+
+.topNavContent .secNav:hover {
+    border-top: 3px solid #2d77d0;
+}
+
+.topNavContent .firNav a:hover {
+    color: #2d77d0;
+}
+
+.secNav li:first-child {
+    border-top: 1px solid transparent;
+}
+
+.secNav li {
+    border-top: 1px solid #ededed;
+}

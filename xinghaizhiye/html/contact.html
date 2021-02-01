@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="edge" />
+    <meta charset="utf-8" />
+    <title>星海置业</title>
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="topNav">
+        <div class="topContainer">
+            <div class="clearFix topLogo">
+                <a><img src="../img/headlogo.png" alt="logo"></a>
+            </div>
+            <div class="clearFix topNavContent">
+                <ul>
+                    <li class="firNav"><a href="../html/index.html">首页</a></li>
+                    <li class="firNav"><a>有关星海<span></span></a>
+                        <ul class="secNav">
+                            <li><a href="#">有关子项1</a></li>
+                            <li><a href="#">有关子项2</a></li>
+                            <li><a href="#">有关子项2</a></li>
+                        </ul>
+                    </li>
+                    <li class="firNav"><a>星海项目<span></span></a>
+                        <ul class="secNav">
+                            <li><a href="#">有关子项</a></li>
+                            <li><a href="#">有关子项2</a></li>
+                        </ul>
+                    </li>
+                    <li class="firNav"><a>星海新闻<span></span></a>
+                        <ul class="secNav">
+                            <li><a href="#">有关子项1</a></li>
+                            <li><a href="#">有关子项2</a></li>
+                            <li><a href="#">有关子项2</a></li>
+                        </ul>
+                    </li>
+                    <li class="firNav"><a href="../html/contact.html " target="_blank">联络星海</a></li>
+                    <li class="firNav"><a>入住星海<span></span></a>
+                        <ul class="secNav">
+                            <li><a href="../html/flowchart.html">入住流程图</a></li>
+                            <li><a href="#">服务问答</a></li>
+                        </ul>
+                    </li>
+                    <li class="firNav"><a href="../html/join.html " target="_blank">加入星海</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <main>
+        <div class="banner" style="background-image: url(../img/contactBanner.jpg);"></div>
+        <div class="backIndex">
+            <a><img class="triangle" src="../img/icon1.png" alt="首页">&nbsp;&nbsp;首页</a>
+            <a><img class="triangle" src="../img/icon2.png" alt="右三角">&nbsp;&nbsp;联络星海</a>
+        </div>
+        <div class="contactText">
+            <p>联系我们</p>
+            <div class="contactBar">
+                <div class="contactBarInner"></div>
+            </div>
+        </div>
+        <div class="picContact">
+            <div class="picContactInner">
+                <img src="../img/address.png" alt="地点">
+                <p>地址</p>
+                <p>新乡市平原路599号中原银行北段10楼</p>
+                <div class="line"></div>
+            </div>
+            <div class="picContactInner">
+                <img src="../img/phone.png" alt="电话">
+                <p>电话</p>
+                <p>0373-5026060</p>
+                <div class="line"></div>
+            </div>
+            <div class="picContactInner">
+                <img src="../img/mail.png" alt="邮箱">
+                <p>邮箱</p>
+                <p>xinghauzgute@126.com</p>
+                <div class="line"></div>
+            </div>
+            <div class="picContactInner">
+                <img src="../img/fax.png" alt="传真">
+                <p>传真</p>
+                <p>0373-5026060</p>
+                <div class="line"></div>
+            </div>
+        </div>
+
+        <div id="allmap">
+        </div>
+    </main>
+    <!-- 底部 -->
+    <footer>
+        <div class="footContent">
+            <a><img src="../img/footlogo.png" alt="底部logo"></a>
+            <div class="footRight">
+                <div class="footLink">
+                    <ul>
+                        <li><a>首页</a></li>
+                        <li><a>企业邮箱</a></li>
+                        <li><a>联系我们</a></li>
+                        <li><a>免责声明</a></li>
+                    </ul>
+                </div>
+                <div class="footContact">
+                    <p>联系电话：0373-5026060<span> 地址：新乡市平原路599号中原银行北段10楼</span><span>邮箱：xinghaizhiye@126.com</span></p>
+                    <img src="../img/wxchat.png" alt="微信图标">
+                    <p>&nbsp;微信公众号</p>
+                </div>
+
+                <p>Copyright&nbsp;&nbsp;2018-2019&nbsp;xinxiangxinghai.com.&nbsp;All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+<script type="text/javascript"
+    src="https://api.map.baidu.com/api?v=1.0&&type=webgl&ak=IiQVSwmNtPna1K8WDoEPeCKKCFY2fbK8"></script>
+<script type="text/javascript">
+    var map = new BMapGL.Map("allmap"); // 创建地图实例 
+    var point = new BMapGL.Point(113.908799, 35.289745); // 创建点坐标 
+    map.centerAndZoom(point, 15);
+    var zoomCtrl = new BMapGL.ZoomControl(); // 添加缩放控件
+    map.addControl(zoomCtrl);
+    map.enableScrollWheelZoom(); //启用滚轮放大缩小，默认禁用
+    map.enableContinuousZoom(); //启用地图惯性拖拽，默认禁用
+</script>

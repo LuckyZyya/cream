@@ -1,0 +1,298 @@
+.topNavContent .firNav>a:hover {
+    border-bottom: 3px solid #db214c;
+}
+
+.topNavContent .secNav:hover {
+    border-top: 3px solid #db214c;
+}
+
+.topNavContent .firNav a:hover {
+    color: #db214c;
+}
+
+.banner {
+    width: 100%;
+    height: 200px;
+    margin-top: 3px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main {
+    background-color: #f5f5f5;
+}
+
+.backIndex {
+    width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.backIndex>a {
+    height: 40px;
+    font-size: 14px;
+}
+
+.backIndex a:nth-child(1)>img {
+    width: 13px;
+    height: 13px;
+}
+
+.backIndex a:last-child {
+    color: #db214c;
+}
+
+.triangle {
+    width: 4px;
+    height: 7px;
+    padding: 2px 2px 2px 6px;
+}
+
+.flowContent {
+    width: 1200px;
+    height: 1200px;
+    margin: 0 auto;
+}
+
+.flowContentText {
+    height: 80px;
+    background-color: #fff;
+}
+
+.flowContentText>p {
+    width: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 80px;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+
+.flowContentText>p a {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.flowContentText>p a:hover {
+    color: #db214c;
+    border-bottom: 3px solid #db214c;
+}
+
+.flowStep {
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.flowStep ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flowStep ul li {
+    width: 100%;
+    height: 130px;
+    margin-left: 30px;
+    border-bottom: 1px solid #f5f5f5;
+    z-index: 96;
+}
+
+.flowStep ul li:last-child {
+    height: 160px;
+}
+
+.stepText {
+    width: 200px;
+    float: left;
+}
+
+.stepText p {
+    font-weight: bold;
+    color: #db214c;
+}
+
+.stepText>p:first-child {
+    font-size: 14px;
+    margin-top: 40px;
+
+}
+
+.stepText>p:nth-child(2) {
+    font-size: 16px;
+}
+
+.mainContent {
+    width: 16px;
+    height: 140px;
+    float: left;
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+
+.flowStep>ul>li:nth-child(1)>div:nth-child(2) {
+    height: 110px;
+    margin-top: 30px;
+    background-color: #ffd5df;
+}
+
+.flowStep>ul>li:nth-child(1)>div:nth-child(2) .flowTriangle {
+    display: none;
+}
+
+.flowStep>ul>li:nth-child(2)>div:nth-child(2) {
+    background-color: #f6a7ba;
+    z-index: 97;
+}
+
+.flowStep>ul>li:nth-child(2)>div:nth-child(2) .flowTriangle {
+    width: 0px;
+    height: 0px;
+    border: 8px solid transparent;
+    border-top-color: #ffd5df;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    display: block;
+    z-index: 99;
+    margin-top: -1px;
+}
+
+.flowStep>ul>li:nth-child(3)>div:nth-child(2) {
+    background-color: #f08ca4;
+    z-index: 97;
+}
+
+.flowStep>ul>li:nth-child(3)>div:nth-child(2) .flowTriangle {
+    width: 0px;
+    height: 0px;
+    border: 8px solid transparent;
+    border-top-color: #f6a7ba;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    display: block;
+    z-index: 99;
+    margin-top: -1px;
+}
+
+.flowStep>ul>li:nth-child(4)>div:nth-child(2) {
+    background-color: #ec7792;
+    z-index: 97;
+}
+
+.flowStep>ul>li:nth-child(4)>div:nth-child(2) .flowTriangle {
+    width: 0px;
+    height: 0px;
+    border: 8px solid transparent;
+    border-top-color: #f08ca4;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    display: block;
+    z-index: 99;
+    margin-top: -1px;
+}
+
+.flowStep>ul>li:nth-child(5)>div:nth-child(2) {
+    background-color: #e95c7e;
+    z-index: 97;
+}
+
+.flowStep>ul>li:nth-child(5)>div:nth-child(2) .flowTriangle {
+    width: 0px;
+    height: 0px;
+    border: 8px solid transparent;
+    border-top-color: #ec7792;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    display: block;
+    z-index: 99;
+    margin-top: -1px;
+}
+
+.flowStep>ul>li:nth-child(6)>div:nth-child(2) {
+    background-color: #e9496f;
+    z-index: 97;
+}
+
+.flowStep>ul>li:nth-child(6)>div:nth-child(2) .flowTriangle {
+    width: 0px;
+    height: 0px;
+    border: 8px solid transparent;
+    border-top-color: #e95c7e;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    display: block;
+    z-index: 99;
+    margin-top: -1px;
+}
+
+.flowStep>ul>li:nth-child(7)>div:nth-child(2) {
+    background-color: #e73660;
+    z-index: 97;
+}
+
+.flowStep>ul>li:nth-child(7)>div:nth-child(2) .flowTriangle {
+    width: 0px;
+    height: 0px;
+    border: 8px solid transparent;
+    border-top-color: #e9496f;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    display: block;
+    z-index: 99;
+    margin-top: -1px;
+}
+
+.flowStep>ul>li:nth-child(8)>div:nth-child(2) {
+    background-color: #dc214c;
+    height: 110px;
+    z-index: 97;
+}
+
+.flowStep>ul>li:nth-child(8)>div:nth-child(2)>.flowTriangle:first-child {
+    width: 0px;
+    height: 0px;
+    border: 8px solid transparent;
+    border-top-color: #e73660;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    display: block;
+    z-index: 99;
+    margin-top: -1px;
+}
+
+.flowStep>ul>li:nth-child(8)>div:nth-child(2)>.flowTriangle:last-child {
+    width: 0px;
+    height: 0px;
+    border: 8px solid transparent;
+    border-top-color: #db214c;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    display: block;
+    z-index: 99;
+    margin-top: 95px;
+}
+
+.rightContent {
+    float: left;
+    height: 50px;
+    margin-left: 30px;
+    padding-top: 45px;
+}
+
+.rightContent p {
+    font-size: 16px;
+    color: #333;
+
+}
