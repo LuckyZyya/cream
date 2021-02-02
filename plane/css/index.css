@@ -1,0 +1,17 @@
+.i-h-content {
+    height: 760px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.i-m-salesman {
+    width: 1350px;
+    height: 760px;
+    margin: -115px auto 0px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid red;
+    z-index: 1;
+}
