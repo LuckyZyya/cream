@@ -1,0 +1,203 @@
+.i-h-content {
+    width: 100%;
+    height: 695px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.l-m-nav {
+    width: 1200px;
+    height: 55px;
+    margin: 0 auto;
+}
+
+.l-m-navContent {
+    float: left;
+    text-align: center;
+    margin-right: 50px;
+    width: 125px;
+    height: 45px;
+}
+
+.l-m-navContent>a {
+    font-size: 24px;
+    color: #333333;
+    line-height: 45px;
+}
+
+.l-m-navContent:hover>a {
+    font-size: 28px;
+}
+
+.l-m-navContent:hover>.l-m-navLine {
+    display: block;
+}
+
+.l-m-navLine {
+    display: none;
+    width: 50px;
+    height: 5px;
+    margin: 5px auto;
+    background-color: #248eda;
+    border-radius: 5px;
+}
+
+.l-m-navF {
+    width: 1200px;
+    height: 25px;
+    margin: 0 auto;
+}
+
+.l-m-navFLink {
+    float: right;
+    width: 150px;
+    color: #333333;
+}
+
+.l-m-indexImg {
+    height: 18px;
+    float: left;
+    margin: 2px;
+}
+
+.l-m-indexImg>img {
+    width: 20px;
+    height: 18px;
+}
+
+.l-m-navF>p>a {
+    font-size: 14px;
+    text-align: center;
+    color: #333333;
+    margin-right: 2px;
+}
+
+.c-m-mainbg {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #f4f5f9;
+}
+
+.c-m-card {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.i-m-cCard {
+    width: 285px;
+    height: 395px;
+    margin: 10px 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.i-m-cCard:nth-child(4n+1) {
+    margin-left: 0px;
+}
+
+.i-m-cCard:nth-child(4n) {
+    margin-right: 0px;
+}
+
+.cCardImg {
+    width: 90px;
+    border-radius: 50%;
+    height: 90px;
+    margin: 30px auto;
+    -moz-box-shadow: 0px -2px 20px 0px #efefef;
+    -webkit-box-shadow: 0px -2px 20px 0px #efefef;
+    box-shadow: 0px -2px 20px 0px #efefef;
+}
+
+.cCardImg>img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.i-m-cardLine {
+    width: 50px;
+    height: 3px;
+    margin: 15px auto;
+    text-align: center;
+    background-color: #248eda;
+}
+
+.i-m-cardText {
+    width: 235px;
+    margin: 30px auto;
+    line-height: 25px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.l-m-number {
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.l-m-numContent {
+    width: 980px;
+    height: 200px;
+    padding: 0px 20px;
+    float: right;
+}
+
+.l-m-numContent>ul>li {
+    float: left;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    padding: 5px 10px;
+    margin: 0px 6px;
+    border: 1px solid rgba(142, 29, 34, 0.1);
+}
+
+.l-m-numContent>ul>li:first-child {
+    border: 1px solid transparent;
+}
+
+#l-m-turn {
+    border: 1px solid transparent;
+    margin-right: 0px;
+}
+
+.l-m-numContent>ul {
+    margin-top: 80px;
+}
+
+.l-m-numContent>ul>li:last-child {
+    margin: 0;
+    padding: 5px 0px;
+    border: 1px solid transparent;
+}
+
+.l-m-numContent>ul>li>input {
+    height: 16px;
+    width: 50px;
+    padding: 5px 0px;
+    margin-top: -20px;
+    border: 1px solid rgba(142, 29, 34, 0.1);
+    border-radius: 2px;
+    transition: background 0.3s ease-in-out;
+}
+
+.l-m-numContent>ul>li>input:focus {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 5px #9ecaed;
+}
+
+.l-m-num:hover {
+    background-color: #248eda;
+}
+
+.l-m-num:hover>a {
+    color: #fff;
+}
