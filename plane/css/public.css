@@ -82,3 +82,103 @@ ul {
 }
 
 /* 底部 */
+footer {
+    width: 100%;
+    background: #363435;
+}
+
+.i-f-content {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.i-f-contentLinkText {
+    margin-left: 135px;
+    padding: 100px 0px 25px 0px;
+    width: 580px;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+}
+
+.i-f-contentLink {
+    flex: 1;
+}
+
+.i-f-contentLink>ul>li {
+    line-height: 30px;
+}
+
+.i-f-contentLink>ul>li:first-child>a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #b5b5b5;
+}
+
+.i-f-contentLink>ul>li>a {
+    font-size: 14px;
+    color: #b5b5b5;
+}
+
+.i-f-service {
+    float: left;
+    padding: 100px 0px 25px 0px;
+    width: 320px;
+    height: 120px;
+    margin-left: 80px;
+}
+
+.i-f-serviceImg {
+    width: 42px;
+    height: 65px;
+    float: left;
+}
+
+.i-f-serviceImg>img {
+    width: 42px;
+    height: 65px;
+}
+
+.i-f-serviceText {
+    float: left;
+    margin-left: 10px;
+    width: 200px;
+    line-height: 30px;
+}
+
+.i-f-mail {
+    float: left;
+    margin-top: 15px;
+    width: 115px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #514e50;
+}
+
+.i-f-mail>img {
+    padding: 12px 5px 10px 15px;
+    width: 24px;
+    height: 18px;
+    float: left;
+}
+
+.i-f-mail>p {
+    padding: 12px 5px;
+    font-size: 14px;
+    color: #fffefe;
+}
+
+.i-f-copyright {
+    float: left;
+    width: 1200px;
+    height: 50px;
+    margin: 50px auto 30px auto;
+    text-align: center;
+    line-height: 25px;
+}
+
+.i-f-all {
+    height: 300px;
+    border-bottom: 1px solid #212121;
+}
