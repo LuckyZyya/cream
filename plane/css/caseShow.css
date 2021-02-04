@@ -6,10 +6,15 @@
     background-size: cover;
 }
 
+main {
+    background-color: #f4f5f9;
+}
+
 .l-m-nav {
     width: 1200px;
     height: 55px;
-    margin: 0 auto;
+    padding-top: 50px;
+    margin: 0px auto;
 }
 
 .l-m-navContent {
@@ -21,21 +26,12 @@
 }
 
 .l-m-navContent>a {
-    font-size: 24px;
+    font-size: 28px;
     color: #333333;
     line-height: 45px;
 }
 
-.l-m-navContent:hover>a {
-    font-size: 28px;
-}
-
-.l-m-navContent:hover>.l-m-navLine {
-    display: block;
-}
-
 .l-m-navLine {
-    display: none;
     width: 50px;
     height: 5px;
     margin: 5px auto;

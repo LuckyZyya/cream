@@ -15,6 +15,11 @@ main {
     width: 1200px;
     height: 55px;
     margin: 0 auto;
+    padding-top: 50px;
+}
+
+.l-m-navContent:first-child>a {
+    font-size: 28px;
 }
 
 .l-m-navContent {
@@ -31,16 +36,11 @@ main {
     line-height: 45px;
 }
 
-.l-m-navContent:hover>a {
+/* .l-m-navContent:hover>a {
     font-size: 28px;
-}
-
-.l-m-navContent:hover>.l-m-navLine {
-    display: block;
-}
+} */
 
 .l-m-navLine {
-    display: none;
     width: 50px;
     height: 5px;
     margin: 5px auto;
