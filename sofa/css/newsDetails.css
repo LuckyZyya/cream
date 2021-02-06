@@ -29,15 +29,13 @@
     height: 0.5rem;
     float: left;
     margin-left: 0.045rem;
-}
-
-.i-h-contText>a {
     font-size: 0.28rem;
     color: #fff;
     text-align: center;
     line-height: 0.5rem;
     vertical-align: middle;
 }
+
 
 .i-h-shareImg {
     float: left;
@@ -74,4 +72,75 @@
 
 .n-m-newsText>p:last-child {
     margin-bottom: 0.7rem;
+}
+
+.i-f-share {
+    position: absolute;
+    left: 0;
+    height: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 9;
+    background-color: #fff;
+}
+
+.i-f-title {
+    height: 0.65rem;
+}
+
+.i-f-text {
+    height: 0.65rem;
+    text-align: right;
+    width: 4.5rem;
+    float: left;
+}
+
+
+.i-f-text>p {
+    vertical-align: middle;
+    line-height: 0.65rem;
+    font-size: 0.32rem;
+    color: #333333;
+}
+
+.i-f-close {
+    float: right;
+    display: flex;
+    align-items: center;
+    width: 0.4rem;
+    height: 0.65rem;
+    margin-right: 0.3rem;
+}
+
+.i-f-close>img {
+    width: 0.3rem;
+    height: 0.3rem;
+}
+
+.i-f-shareIcon {
+    height: 2.45rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 0.24rem;
+    color: #333333;
+}
+
+.i-f-icon {
+    flex: 1;
+    margin: 0.75rem;
+    width: 0.88rem;
+    height: 0.88rem;
+}
+
+.i-f-icon>img {
+    margin-bottom: 0.2rem;
+    width: 0.88rem;
+    height: 0.88rem;
+}
+
+.ovfHiden {
+    overflow: hidden;
+    height: 100%;
+
 }

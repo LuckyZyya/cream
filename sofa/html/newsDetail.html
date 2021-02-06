@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../css/public.css" />
     <link rel="stylesheet" href="../css/newsDetails.css" />
     <link rel="stylesheet" href="../css/mui.min.css" />
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="../js/rem.js"></script>
     <style>
         body {
@@ -21,9 +21,28 @@
         }
     </style>
     <script>
-        window.onload = function () {
-            $(".load").removeClass("load");
-        };
+        // window.onload = function () {
+        //     $(".load").removeClass("load");
+        // };
+        $(document).ready(function () {
+            $(".n-h-share").click(function () {
+                $('html,body').addClass('ovfHiden'); //使网页不可滚动
+                $(".i-f-share").show();
+                $('.index').css({
+                    'height': '100%',
+                    'overflow': 'hidden'
+                });
+                $('.i-f-share').css({
+                    'height': '3.3rem'
+                });
+
+            });
+            $(".i-f-close").click(function () {
+                $('html,body').removeClass('ovfHiden'); //使网页恢复可滚
+                $(".i-f-share").hide();
+            });
+
+        });
     </script>
 
 </head>
@@ -39,26 +58,42 @@
                     麦秸映像&nbsp;&nbsp;新闻资讯&nbsp;&nbsp;2019-09-05</p>
             </div>
             <div class="n-h-share">
-                <div class="i-h-contText"> <a href="">分享</a>
+                <div class="i-h-contText"> 分享
                 </div>
-                <div class="i-h-shareImg"><img src="../img/share.png" alt="分享"></div>
+                <div class="i-h-shareImg">
+                    <img src="../img/share.png" />
+                </div>
             </div>
         </div>
         <div class="n-m-newsDetails">
             <div class="n-m-newsText">
-                <p style="font-size: 0.28rem;color: #333333;">
+                <p style="font-size: 0.28rem;color: #333333;line-height: 0.35rem;">
                     丽日当空，群山绵延，簇簇的白色花朵象一条流动的江河。仿佛世间所有的生命都应约前来，在这刹那里，在透明如醇蜜的阳光下，同时欢呼，同时飞旋，同时幻化成无数游离浮动的光点</p>
             </div>
             <div class="n-m-newsImg">
                 <img src="../img/details.jpg" alt="详情图片">
             </div>
             <div class="n-m-newsText">
-                <p style="font-size: 0.28rem;color: #333333;">
+                <p style="font-size: 0.28rem;color: #333333;line-height: 0.35rem;">
                     丽日当空，群山绵延，簇簇的白色花朵象一条流动的江河。仿佛世间所有的生命都应约前来，在这刹那里，在透明如醇蜜的阳光下，同时欢呼，同时飞旋，同时幻化成无数游离浮动的光点</p>
-                <p style="font-size: 0.28rem; color:#333333;">
+                <p style="font-size: 0.28rem; color:#333333;line-height: 0.35rem;">
                     这段话运用生动优美的笔触描绘了桐花盛开的美景，视觉与听觉相结合，动静结合，充满了生机和动感。作者运用比喻的手法，把繁华盛开的场景比作流动的江河，把阳光比作醇蜜，将这幅景象刻画得美不胜收。最后的排比句，语势加强，让人感受到桐花盛开时喷发的生命力，仿
                     佛整个山坡都被桐花覆盖了，生命的张力无限延伸</p>
             </div>
+        </div>
+
+    </div>
+    <div class="i-f-share">
+        <div class="clearFix i-f-title">
+            <div class="i-f-text">
+                <p>分享给好友</p>
+            </div>
+            <div class="i-f-close"><img src="../img/close.png" alt="关闭"></div>
+        </div>
+        <div class="i-f-shareIcon">
+            <div class="i-f-icon"><img src="../img/icon3.png" alt="微信">微信</div>
+            <div class="i-f-icon"><img src="../img/icon4.png" alt="朋友圈">朋友圈</div>
+            <div class="i-f-icon"><img src="../img/qq.png" alt="qq">QQ</div>
         </div>
     </div>
 </body>
