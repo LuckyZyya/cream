@@ -9,7 +9,6 @@ body {
 }
 
 .i-h-title {
-    border: 1px solid black;
     text-align: center;
 }
 
@@ -45,43 +44,82 @@ body {
     margin: 0 0.98rem;
     width: 5.2rem;
     height: 0.75rem;
-    border: 1px solid yellow;
 }
 
+
 .i-h-select {
-    width: 5.2rem;
+    /* width: 5.2rem; */
     height: 0.75rem;
     font-size: 0.28rem;
+    padding-left: 0.2rem;
     color: #808080;
-    border: 1px solid green;
-}
-
-.i-h-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0.15rem;
     background-image:
-        linear-gradient(45deg, transparent 50%, black 50%),
-        linear-gradient(135deg, black 50%, transparent 50%),
-        linear-gradient(to right, #cccccc, #cccccc);
+        linear-gradient(45deg, transparent 50%, transparent 50%),
+        linear-gradient(135deg, transparent 50%, white 50%),
+        linear-gradient(-135deg, transparent 50%, white 50%),
+        linear-gradient(-45deg, transparent 50%, #cccccc 50%);
     background-position:
-        calc(100% - 0.2rem) calc(1rem + 0.02rem),
-        calc(100% - 0.15rem) calc(1rem + 0.02rem),
-        100% 0;
+        calc(100% - 0.2rem)calc(0.35rem),
+        calc(100% - 0.2rem)calc(0.35rem),
+        calc(100% - 0.2rem)calc(0.35rem),
+        calc(100% - 0.2rem) calc(0.35rem), 100% 0;
     background-size:
-        0.05rem 0.05rem,
-        0.05rem 0.05rem,
-        2.5rem 2.5rem;
+        0.15rem 0.15rem,
+        0.15rem 0.15rem;
     background-repeat: no-repeat;
 }
 
 .i-h-input {
-    margin: 0 0.98rem;
+    margin: 0.3rem 0.98rem;
     width: 5.2rem;
     height: 0.75rem;
 }
 
 .i-h-input>input {
-    width: 5.2rem;
+    border: 0;
+    outline: none;
+    width: 5rem;
     height: 0.75rem;
     font-size: 0.28rem;
+    padding-left: 0.2rem;
     color: #808080;
-    border: 1px solid green;
+    border-radius: 0.15rem;
+}
+
+.i-m-button {
+    border-radius: 0.5rem;
+    text-align: center;
+    line-height: 0.75rem;
+    background: linear-gradient(#f9d89e, #ffcb6d);
+    margin: 0.3rem 0.98rem;
+    width: 5.2rem;
+    height: 0.75rem;
+    font-size: 0.3rem;
+    font-weight: bold;
+}
+
+.i-m-button>span {
+    background: linear-gradient(#ef9e4e, #bc4d02);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.i-f-text {
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 0.8rem;
+    position: fixed;
+    z-index: 99999;
+    text-align: center;
+}
+
+.i-f-text>p {
+    font-size: 0.22rem;
+    color: #ffe698;
 }
