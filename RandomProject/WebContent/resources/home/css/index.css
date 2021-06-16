@@ -1,0 +1,158 @@
+.top {
+    position: absolute;
+    z-index: 99;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+.aboutLand {
+    width: 1200px;
+    margin: 0 auto;
+    height: 345px;
+    padding-top: 80px;
+}
+
+.i-m-aboutImg {
+    width: 560px;
+    height: 345px;
+    float: left;
+}
+
+.i-m-aboutImg>img {
+    width: 560px;
+    height: 345px;
+}
+
+.i-m-leftAbout {
+    width: 600px;
+    float: left;
+    margin-left: 30px;
+}
+
+.i-m-leftAbout p {
+    color: #333333;
+}
+
+.i-m-line {
+    height: 1px;
+    width: 600px;
+    background-color: #c0c0c0;
+
+}
+
+.i-m-line .i-m-lineInner {
+    width: 75px;
+    height: 3px;
+    background-color: #1772b4;
+}
+
+.i-m-aboutContent {
+    margin-top: 40px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
+    overflow: hidden;
+}
+
+.knowDetails {
+    height: 35px;
+    width: 100px;
+    margin-top: 20px;
+    background-color: #ffc600;
+    color: #fff;
+    font-size: 12px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.centerContent {
+    width: 100%;
+    margin: 100px auto;
+    position: absolute;
+    z-index: 99;
+}
+
+.i-m-cardBg {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.centerCard {
+    width: 380px;
+    height: 445px;
+    background: #fff;
+    float: left;
+    margin-top: 185px;
+    margin-right: 20px;
+}
+
+.centerCard img {
+    width: 380px;
+    height: 210px;
+}
+
+.cardText {
+    padding: 0px 25px;
+}
+
+.newsCard {
+    padding: 80px 0px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.newsDetails {
+    width: 280px;
+    height: 35px;
+    margin: 0 auto;
+}
+
+.newsDetails>img {
+    width: 70px;
+    height: 35px;
+}
+
+.newsDetails>p {
+    width: 140px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 24px;
+    color: #333333;
+    float: left;
+}
+
+.newsDetails>img:first-child {
+    float: left;
+}
+
+.newsCardContent {
+    width: 1200px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsCardDetails {
+    width: 535px;
+    margin-top: 50px;
+}
+
+.newsCardDetails:nth-last-of-type(odd) {
+    margin-left: 90px;
+}
+
+.newsDate {
+    width: 125px;
+    height: 120px;
+    border: 1px solid #e5e5e5;
+    float: left;
+}
+
+.cardContent {
+    padding-left: 20px;
+    float: left;
+    width: 385px;
+    height: 120px;
+}

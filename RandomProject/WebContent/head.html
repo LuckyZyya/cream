@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>head</title>
+	<link rel="stylesheet" type="text/css" href="resources/home/css/style.css" />
+	<style>
+	.headContent {
+    width: 1200px;
+    margin: 0 auto;
+    height: 110px;
+}
+
+.headContent>a>img {
+    width: 230px;
+    height: 110px;
+    float: left;
+}
+
+.tm_head_tools {
+    width: 250px;
+    margin-top: 38px;
+    margin-right: -30px;
+    color:#707070;
+}
+.tm_head_tools>a{
+color:#707070;
+}
+.tm_head{
+background:transparent;
+}
+	</style>
+	<script type="text/javascript" src="resources/home/js/jquery.js"></script>
+	<script type="text/javascript">
+		
+
+		var tm = {
+			logout : function(){
+				if(window.confirm('确定要退出登录吗？')){
+					top.location.href = "home/user/logout";
+				}
+			}
+		};
+
+		var tm_activemenu = function(obj){
+			$(obj).parent().parent().children("li").attr("class","");
+			$(obj).parent().attr("class","active");
+		}
+
+		//异步获取登录帐号信息
+		$.ajax({
+			type: "POST",
+			url: "home/user/get_current",
+			dataType:'json',
+			success: function(data){
+				if(data.type == 'success'){
+					$("#user-name").text(data.username + '  姓名:[' + data.truename + ']');
+				}else{
+					alert(data.msg);
+				}
+			},
+			error : function(){
+				top.location.href = "home/login";
+			}
+		});
+		
+	</script>
+</head>
+<body>
+
+    <div class="tm_head" style="background-image:url('resources/home/images/headbg.jpg'); background-size: cover;background-position: center;background-repeat: no-repeat;">
+    
+         <div class="clearFix headContent" >
+        <a><img src="resources/home/images/logo.png" alt="图标"></a>
+        
+
+			<div class="tm_head_tools">
+				<span style="cursor:pointer" id="user-name">
+					正在获取账户信息...
+				</span> ||
+				<a href="javascript:void(0);" onclick="return tm.logout();"><img src="resources/home/images/ico_exit.png" align="absmiddle"/>退出</a>
+			</div>
+		 
+      </div>  
+        
+    </div>
+
+
+
+	<script type="text/javascript">
+
+		
+
+	</script>
+
+
+</body>
+</html>
